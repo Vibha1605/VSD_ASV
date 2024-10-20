@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Spoof Detection</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Voice Spoof Detection System</h1>
+
+            <div class="file-upload">
+                <label for="fileInput">Upload Voice File:</label>
+                <input type="file" id="fileInput" accept="audio/*">
+            </div>
+
+            <button class="analyze-btn" onclick="analyzeVoice()">Analyze Voice</button>
+
+            <div id="result" class="result" style="display:none;">
+                <h2 id="status"></h2>
+                <p id="confidence"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
